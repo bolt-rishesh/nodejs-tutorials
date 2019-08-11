@@ -1,3 +1,5 @@
-var counter = require('./count');
+var stuff = require('./stuff');
 
-console.log(counter(['rishesh','agarwal','bolt']));
+console.log(stuff.counter(['rishesh','agarwal','bolt']));
+console.log(stuff.adder(5,6));
+console.log(stuff.pi);
