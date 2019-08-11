@@ -1,15 +1,25 @@
 
-// normal function statement
+// // normal function statement
 
-function sayHi(){
-    console.log("hii");
+// function sayHi(){
+//     console.log("hii");
+// }
+
+// sayHi();
+
+// //function expression
+// var sayBye = function(){
+//     console.log("bye");
+// };
+
+// sayBye();
+
+function callFunction(fun){
+    fun();
 }
 
-sayHi();
-
-//function expression
 var sayBye = function(){
     console.log("bye");
 };
 
-sayBye();
+callFunction(sayBye)
