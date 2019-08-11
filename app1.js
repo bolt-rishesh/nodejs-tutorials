@@ -3,11 +3,11 @@ var express = require('express');
 var app = express();
 
 app.get('/',function(req,res){
-    res.send('this is a home page');
+    res.sendFile(__dirname + '/index.html');
 });
 
 app.get('/contact',function(req,res){
-    res.send('this is a contact page');
+    res.sendFile(__dirname + '/contact.html');
 });
 
 
